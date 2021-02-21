@@ -1,2 +1,2 @@
-##Vanilla JS ToDo List Application
+## A JavaScript ToDo List Application
 
