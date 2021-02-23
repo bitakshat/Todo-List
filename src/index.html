@@ -9,10 +9,10 @@
 <head>
 	<title>Todo List</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<!-- font awesome link -->
+	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-	<!-- google fonts link -->
+	<!-- google fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 
@@ -22,12 +22,16 @@
 		<header class="main">
 			<h1>Todo List</h1>
 		</header>
+
+		<!-- clock and progressbar -->
 		<div class="digital-clock">
-			<h2 align="center">Time -></h2>
+			<h2 align="center">Time:</h2>
 			<h2 class="render-clock" align="center"></h2>
+			<progress id="timeprogress" value="" max="60"></progress>
 		</div>
+
 		<form>
-			<input type="text" class="todo-input">
+			<input type="text" class="todo-input" placeholder="what would you like to add?">
 			<button class="todo-button" type="submit">
 				<i class="fas fa-plus-square"></i>
 			</button>

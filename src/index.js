@@ -56,6 +56,7 @@ function deleteCheck(e) {
 	if(item.classList[0] === 'trash-btn') {
 		const todo = item.parentElement;
 		//Animation
+		console.log(item.parentElement);
 		todo.classList.add('fall'); 
 		todo.addEventListener('transitionend', function() {
 			todo.remove();
@@ -68,3 +69,10 @@ function deleteCheck(e) {
 		todo.classList.toggle('completed');
 	}
 }
+
+// rendering time component
+setInterval(() => {
+	const progress = document.querySelector('#timeprogress');
+	const currentProgress = new Date().getSeconds();
+	progress.setAttribute("value", currentProgress);
+}, 1000);
